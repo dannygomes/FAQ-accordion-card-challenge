@@ -79,7 +79,6 @@ h4 {
 
 h4 > img {
     display: inline;
-    
 }
 
 input[type=radio] {
@@ -106,7 +105,7 @@ input[type=radio] {
 
 .faq input[type=radio]:checked + label + .answer-container {
     max-height: 5rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 
