@@ -16,11 +16,9 @@ main {
 #card {
     display: flex;
     padding: 3rem 3rem 3rem 0;
-    position: relative;
     overflow: hidden;
     border-radius: 1rem;
     background-color: white;
-
 }
 
 
@@ -31,14 +29,21 @@ img {
 
 #image-container {
     z-index: 1;
+    position: relative;
 }
 
-#box-image-container {
-    position: absolute;
-    
+#that-box {
+    position: fixed;
     top: 44%;
     left: 14%;
-    z-index: 2;
+}
+
+#pattern {
+    position: absolute;
+    max-width: 55rem;
+    top: -20rem;
+    left: -33rem;
+    z-index: -1;
 }
 
 #desktop {
@@ -46,14 +51,8 @@ img {
     object-position: -5rem;
 }
 
-#pattern-image-container {
-    position: absolute;
-    top: -19rem;
-    left: -36rem; 
-}
-
 #image-container {
-    flex-basis: 56%;
+    flex-basis: 58%;
 }
 
 #faqs-container {
