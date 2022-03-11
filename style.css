@@ -10,7 +10,8 @@ body {
 }
 
 main {
-    width: 54rem;
+    max-width: 54rem;
+    position: relative;
 }
 
 #card {
@@ -30,12 +31,14 @@ img {
 #image-container {
     z-index: 1;
     position: relative;
+    flex-basis: 58%;
 }
 
 #that-box {
-    position: fixed;
-    top: 43%;
-    left: 14%;
+    position: absolute;
+    top: 11.3rem;
+    left: -5.5rem;
+    z-index: 3;
 }
 
 #pattern {
@@ -49,10 +52,6 @@ img {
 #desktop {
     object-fit: cover;
     object-position: -5rem;
-}
-
-#image-container {
-    flex-basis: 58%;
 }
 
 #faqs-container {
@@ -107,7 +106,57 @@ input[type=radio] {
     margin-top: 0rem;
 }
 
+@media (max-width: 900px) {
+    main {
+        max-width: 20rem;
+    }
+
+    #card {
+        flex-direction: column;
+        overflow: visible;
+        justify-content: center;
+        padding: 7rem 2rem 2rem 2rem;
+    }
+
+    img {
+        max-width: 75%;
+    }
+
+    #pattern {
+        max-width: 75%;
+        top: 0;
+        left: 0;
+    }
+
+    #image-container {
+        position: absolute;
+        top: -5.5rem;
+        left: 4rem;
+    }
+
+    #that-box {
+        max-width: 20%;
+        top: -1.8rem;
+        left: 4.3rem;
+    }
+
+    #desktop {
+        object-position: 0;
+    }
+
+    #faqs-container {
+        justify-content: baseline;
+    }
+
+    #faqs-container > h1 {
+        text-align: center;
+    }
+
+    .faq {
+        padding-top: 1rem;
+    }
+}
 
 /*********/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; color:lawngreen; }
+.attribution a { color: white; }
